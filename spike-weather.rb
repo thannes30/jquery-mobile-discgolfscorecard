@@ -38,5 +38,4 @@ def self.location_lookup(zipcode)
     temp: raw_conditions['current_observation']['temp_f'],
     wind: raw_conditions['current_observation']['wind_mph']
   }
-
 end

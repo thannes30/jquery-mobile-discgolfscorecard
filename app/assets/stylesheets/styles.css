@@ -1,3 +1,10 @@
+h1 {
+  color: white;
+  padding: 8px 0 0 12%;
+  font-size: 1em;
+  font-family: helvetica, sans-serif;
+}
+
 h3 {
   font-family:helvetica;
   text-align: center;
@@ -10,16 +17,53 @@ h3 {
   top:0px;
   left:0px;
   width:100%;
+  opacity: .8;
+}
+
+body{
+  background: url(http://www.pixentral.com/pics/1Ri9DFCjxgs3buuUicNWofYIWxjzNQ.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .creategame {
+  color:white;
+  background-color:black;
   width:250px;
   height:215px;
   position:absolute;
   left:50%;
   top:50%;
   margin:-100px 0 0 -150px;
-  border: solid;
+  opacity: .8;
+}
+
+.enterscores {
+  color:white;
+  background-color:black;
+  width:75%;
+  height:65%;
+  position:absolute;
+  top: 20%;
+  right: 12%;
+  bottom: 12%;
+  left: 12%;
+  opacity: .8;
+}
+
+.showscores{
+  color:white;
+  background-color:black;
+  width:75%;
+  height:65%;
+  position:absolute;
+  top: 20%;
+  right: 12%;
+  bottom: 12%;
+  left: 12%;
+  opacity: .8;
 }
 
 .forms {
@@ -43,4 +87,12 @@ p{
   bottom: 0px;
   left: 0px;
   width: 100%;
+  opacity: .8;
+}
+
+table {
+  width:80%;
+  border: 1px solid white;
+  margin: 0 auto;
+  margin-top:30px;
 }
