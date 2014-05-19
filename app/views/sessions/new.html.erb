@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
+  <div class="weather"></div>
+</div>
+
+<div class="login">
+<h3>Log In</h3>
+<%= form_tag sessions_path do %>
+  <%= label_tag :username %><br>
+  <%= text_field_tag :username %><br>
+  <%= label_tag :password %><br>
+  <%= password_field_tag :password %><br>
+  <%= submit_tag %>
+<% end %>
+</div>
+
+<div class="footer"></div>

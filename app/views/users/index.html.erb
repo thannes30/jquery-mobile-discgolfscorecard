@@ -1,0 +1,19 @@
+<div class="header">
+  <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
+  <div class="weather"></div>
+</div>
+
+<div class="creategame">
+  <% if current_user %>
+    <p>
+      You are signed in as <%= current_user.email %>.
+    </p>
+    <%= link_to "Log Out", log_out_path, method: :delte %>
+  <% else %>
+    <%= link_to "Log In", log_in_path %>
+    <%= link_to "Sign Up", users_new_path %>
+  <% end %>
+</div>
+
+
+<div class="footer"></div>

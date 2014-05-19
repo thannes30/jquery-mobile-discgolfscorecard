@@ -5,3 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+# REMOVE ME FROM SEED... once understood
+bo_user = User.create({username: 'bo', password: 'password', password_confirmation: 'password'})
+bo_game = Game.create()
+bo_score = Score.create()
+
+bo_score.user = bo_user
+bo_score.game = bo_game
+bo_score.save
+
+
+

@@ -1,4 +1,2 @@
-class ScoresController < ApplicationController
-
-
-end
+# class ScoresController < ApplicationController
+# end
