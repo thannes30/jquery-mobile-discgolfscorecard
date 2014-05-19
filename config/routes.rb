@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   get  '/games/new'  => "games#new"
-  # post '/games/new' => 'games#create'
+  post '/games/new' => 'games#create'
 
 
 #    Prefix Verb   URI Pattern               Controller#Action

@@ -4,7 +4,7 @@
 </div>
 
 <div class="enterscores">
-<h4>Player Name:</h4>
+<h4>Player Name:  <%= current_user.username %></h4>
 <h4>Course Name:</h4>
 
 
@@ -19,10 +19,8 @@
         Hole 7:<input type="" class="hole" name="" size="5"><br>
         Hole 8:<input type="" class="hole" name="" size="5"><br>
         Hole 9:<input type="" class="hole" name="" size="5">
-      <!-- </form> -->
-  </div>
+   </div>
    <div class="enterscores_right">
-     <!--  <form> -->
         Hole 10:<input type="" class="hole" name="" size="5"><br>
         Hole 11:<input type="" class="hole" name="" size="5"><br>
         Hole 12:<input type="" class="hole" name="" size="5"><br>
@@ -32,6 +30,7 @@
         Hole 16:<input type="" class="hole" name="" size="5"><br>
         Hole 17:<input type="" class="hole" name="" size="5"><br>
         Hole 18:<input type="" class="hole" name="" size="5">
+        <input type="submit" class="scorebutton" value="Save Scores">
       </form>
   </div>
 

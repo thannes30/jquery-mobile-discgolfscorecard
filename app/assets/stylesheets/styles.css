@@ -1,7 +1,5 @@
 h1 {
   color: white;
-  padding: 8px 0 0 12%;
-  font-size: 1em;
   font-family: helvetica, sans-serif;
 }
 
@@ -40,17 +38,6 @@ body{
   margin:-100px 0 0 -150px;
   opacity: .8;
   box-shadow: 0px 0px 15px #303030;
- /* text-align: center;
-  color:white;
-  background-color:black;
-  width:250px;
-  height:215px;
-  position:absolute;
-  left:50%;
-  top:50%;
-  margin:-100px 0 0 -150px;
-  opacity: .8;
-  box-shadow: 0px 0px 15px #303030;*/
 }
 
 .enterscores {
@@ -60,12 +47,12 @@ body{
   height:65%;
   position:absolute;
   top: 20%;
-  right: 20%;
-  bottom: 20%;
-  left: 20%;
+  right: 25%;
+  bottom: 15%;
+  left: 25%;
   opacity: .8;
   min-width:320px;
-  min-height:470px;
+  min-height:485px;
 }
 
 .login{
@@ -81,6 +68,7 @@ body{
   opacity: .8;
   box-shadow: 0px 0px 15px #303030;
 }
+
 
 .showscores{
   color:white;
@@ -143,4 +131,20 @@ h4{
   font-family:helvetica, sans-serif;
   text-align: center;
   /*margin: 10px 0 0 0;*/
+}
+
+.scorebutton {
+  position:absolute;
+  right:38%;
+  bottom: -8%;
+}
+
+.logo {
+  color:white;
+  font-size:.6em;
+  display: inline-block;
+  width:150px;
+  height:70px;
+  margin-left: 12%;
+  padding: -1px 0 0 0%;
 }

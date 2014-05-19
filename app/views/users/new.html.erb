@@ -3,7 +3,9 @@
   <div class="weather"></div>
 </div>
 
-<div class="creategame">
+<div class="login">
+  <h4>Sign Up</h4>
+  <div class="form">
   <%= form_for @user do |f| %>
     <%= f.label :username %><br>
     <%= f.text_field :username %><br>
@@ -13,6 +15,7 @@
     <%= f.password_field :password_confirmation %><br>
     <%= f.submit %>
     <% end %>
+  </div>
 </div>
 
 
