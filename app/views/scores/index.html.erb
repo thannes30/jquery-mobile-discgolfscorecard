@@ -1,6 +1,11 @@
 <div class="header">
   <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
-  <div class="weather"></div>
+  <div class="newgame">
+      <%= link_to "New Game", games_path %>
+  </div>
+  <div class="signoff">
+    <%= link_to "Log Out", log_out_path, method: :delete %>
+  </div>
 </div>
 
 <div class="showscores">
@@ -23,7 +28,7 @@
     <tr>
       <div class="column">
         <td class="tablecolumn">
-          <%= score.created_at.strftime("%b %d 20%y") %>
+          <%= score.created_at.strftime("%b %d, 20%y") %>
         </td>
       </div>
       <div class="column">
@@ -35,7 +40,7 @@
       </div>
       <div class="column">
         <td class="tablecolumn">
-          <%= score.total_score.sum %>
+          <%= score.total_score %>
         </td>
       </div>
       <div class="column">
@@ -51,5 +56,3 @@
   </table>
   </div>
 </div>
-
-

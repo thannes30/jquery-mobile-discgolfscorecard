@@ -178,6 +178,24 @@ a {
  /* width: 200px;*/
 }
 
+.signoff {
+  position: absolute;
+  right: 13%;
+  top: 30px;
+  color:white;
+}
+
+.newgame {
+  position: absolute;
+  right: 24%;
+  top: 30px;
+  color:white;
+}
+
+.signup {
+  margin-bottom: 8px;
+}
+
 .weatherlist {
   list-style: none;
 }
@@ -204,5 +222,5 @@ tr:nth-child(odd) {
 }
 
 .signedin {
-  margin-top: 30%;
+  margin-top: 25%;
 }
