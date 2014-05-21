@@ -1,19 +1,21 @@
 <div class="header">
   <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
   <div class="weather">
-
-    <!-- <img src="   weather[:icon]   " alt=""> -->
-    <!-- <h4>    weather[:temperature]   </h4>
-    <h4>    weather[:wind_mph]    </h4> -->
-
+      <ul class="weatherlist">
+        <li>Weather:</li>
+        <li>Temperature:</li>
+        <li>Wind Speed:</li>
+      </ul>
+    <!-- display weather here -->
   </div>
 </div>
 
 <div class="enterscores">
 <h4>Player Name:  <%= current_user.username.upcase %></h4>
+<h4>Course Name:  </h4>
 
   <div class="enterscores_left">
-      <%= form_for :score, url: new_scores_path do |f| %>
+      <%= form_for :score, url: scores_path do |f| %>
         <div class="smallforms">
           <%= f.label :hole_1 %>:
           <%= f.text_field :hole_1, :size => 5 %><br>

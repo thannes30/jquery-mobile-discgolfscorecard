@@ -9,7 +9,7 @@ h3 {
 }
 
 .header {
-  height:70px;
+  height:80px;
   background-color:black;
   position: absolute;
   top:0px;
@@ -24,6 +24,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: helvetica, sans-serif;
 }
 
 .creategame {
@@ -52,7 +53,7 @@ body{
   left: 25%;
   opacity: .8;
   min-width:320px;
-  min-height:485px;
+  min-height:450px;
 }
 
 .login{
@@ -68,7 +69,6 @@ body{
   opacity: .8;
   box-shadow: 0px 0px 15px #303030;
 }
-
 
 .showscores{
   color:white;
@@ -86,7 +86,7 @@ body{
 .enterscores_left{
   width: 40%;
   position: absolute;
-  left: 10%;
+  left: 15%;
   min-width:150px;
 }
 .enterscores_right{
@@ -141,10 +141,49 @@ h4{
 
 .logo {
   color:white;
-  font-size:.6em;
+  font-size:.55em;
   display: inline-block;
   width:150px;
   height:70px;
   margin-left: 12%;
-  padding: -1px 0 0 0%;
+  padding: 7px 0 0 0%;
+}
+
+p {
+  font-family: helvetica, sans-serif;
+}
+
+a:link {color:#FFFFFF;}      /* unvisited link */
+a:visited {color:#d3d3d3;}  /* visited link */
+a:hover {color:#2f4f4f;}  /* mouse over link */
+a:active {color:#d3d3d3;} /*selected link*/
+a {
+  text-decoration: none;
+  font-family: helvetica, sans-serif;
+  font-size: .9em;
+}
+
+.loginsignup {
+  padding: 0px 0 0 0;
+}
+
+.smallforms {
+  margin: 10px 0 10px 0px;
+}
+
+.saveround {
+  padding-top: 15px;
+}
+
+.weather {
+  position: absolute;
+  right: 12%;
+  top: 1%;
+  color:white;
+  font-size: .9em;
+ /* width: 200px;*/
+}
+
+.weatherlist {
+  list-style: none;
 }

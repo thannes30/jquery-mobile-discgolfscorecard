@@ -1,11 +1,8 @@
 <div class="header">
-  <div class="logo">
-    <h1>Disc Golf<br>Scorecard</h1>
-  </div>
+  <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
+  <div class="weather"></div>
 </div>
-<div class="displayname">
-  <%= current_user.username %>
-</div>
+
 <div class="showscores">
     <div class="displayname">
       <h4><%= current_user.username.upcase %> Scores</h4>
@@ -21,21 +18,24 @@
       <th>Weather</th>
     </tr>
   </div>
+      <% unless @scores.nil? %>
       <% @scores.each do |score| %>
     <tr>
       <div class="column">
         <td>
-          <%= game.created_at.strftime("%b %d 20%y") %>
+          <%= score.created_at.strftime("%b %d 20%y") %>
         </td>
       </div>
       <div class="column">
         <td>
-          <%= game.course %>
+          <% if score.game %>
+            <%= score.game.course %>
+          <% end %>
         </td>
       </div>
       <div class="column">
         <td>
-          <%= game.total_score %>
+          <%= score.total_score %>
         </td>
       </div>
       <div class="column">
@@ -46,10 +46,9 @@
       </td>
     </div>
      </tr>
+     <% end %>
     <% end %>
   </table>
   </div>
-</div>
+
 <div class="footer"></div>
-
-

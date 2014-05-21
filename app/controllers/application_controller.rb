@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
-    redirect_to root_path if crrent_user.nil?
+    redirect_to root_path if current_user.nil?
   end
 
 end
