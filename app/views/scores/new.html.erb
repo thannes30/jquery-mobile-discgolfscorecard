@@ -2,9 +2,9 @@
   <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
   <div class="weather">
       <ul class="weatherlist">
-        <li>Weather:</li>
-        <li>Temperature:</li>
-        <li>Wind Speed:</li>
+        <li>Weather: <%= @game.weather %></li>
+        <li>Temperature: <%= @game.temperature %></li>
+        <li>Wind Speed: <%= @game.wind %></li>
       </ul>
     <!-- display weather here -->
   </div>
@@ -15,7 +15,7 @@
 <h4>Course Name:  </h4>
 
   <div class="enterscores_left">
-      <%= form_for :score, url: scores_path do |f| %>
+      <%= form_for :score, url: game_scores_path(@game) do |f| %>
         <div class="smallforms">
           <%= f.label :hole_1 %>:
           <%= f.text_field :hole_1, :size => 5 %><br>

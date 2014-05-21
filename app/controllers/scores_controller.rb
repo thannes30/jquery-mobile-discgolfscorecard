@@ -2,20 +2,21 @@ class ScoresController < ApplicationController
 
 
   def index
-    @game = Game.find(session[:current_game])
+    @game = Game.find(params[:game_id])
     @scores = Score.where(user_id: current_user.id)
   end
 
   def new
+    @game = Game.find(params[:game_id])
     @score = Score.new
   end
 
   def create
     @score = Score.new(score_params)
     @score.user = current_user
-    @score.game = Game.find session[:current_game]
+    @score.game = Game.find(params[:game_id])
     if @score.save
-      redirect_to scores_path
+      redirect_to game_scores_path
     else
       render "new"
     end

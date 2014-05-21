@@ -13,15 +13,14 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.create(game_params)
+    @game = Game.new(game_params)
     if @game.save
       weather_info = Weather.location_lookup(params[:game][:zipcode])
       @game.temperature = weather_info[:temperature]
       @game.wind = weather_info[:wind]
       @game.weather = weather_info[:weather]
       @game.save
-      session[:current_game] = @game.id
-      redirect_to new_score_path, :game_id => "#{@game.id}"
+      redirect_to new_game_score_path(@game)
     else
       render "new"
     end
