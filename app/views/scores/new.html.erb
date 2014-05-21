@@ -3,8 +3,8 @@
   <div class="weather">
       <ul class="weatherlist">
         <li>Weather: <%= @game.weather %></li>
-        <li>Temperature: <%= @game.temperature %></li>
-        <li>Wind Speed: <%= @game.wind %></li>
+        <li>Temperature: <%= @game.temperature %>&deg</li>
+        <li>Wind Speed: <%= @game.wind %> mph</li>
       </ul>
     <!-- display weather here -->
   </div>
@@ -12,7 +12,7 @@
 
 <div class="enterscores">
 <h4>Player Name:  <%= current_user.username.upcase %></h4>
-<h4>Course Name:  </h4>
+<h4>Course Name:  <%= @game.course.upcase %></h4>
 
   <div class="enterscores_left">
       <%= form_for :score, url: game_scores_path(@game) do |f| %>
