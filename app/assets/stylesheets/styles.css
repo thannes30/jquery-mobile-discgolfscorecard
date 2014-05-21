@@ -8,6 +8,10 @@ h3 {
   text-align: center;
 }
 
+.tablecolumn {
+  text-align: center;
+}
+
 .header {
   height:80px;
   background-color:black;
@@ -74,11 +78,11 @@ body{
   color:white;
   background-color:black;
   width:75%;
-  height:65%;
+/*  height:65%;*/
   position:absolute;
   top: 20%;
   right: 12%;
-  bottom: 12%;
+/*  bottom: 12%;*/
   left: 12%;
   opacity: .8;
 }
@@ -100,26 +104,16 @@ body{
 }
 
 p{
-  font-family: sans-serif;
   font-size: .9em;
   /*text-align: center;*/
-}
-
-.footer{
-  height:30px;
-  background-color: black;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  opacity: .8;
 }
 
 table {
   width:80%;
   border: 1px solid white;
   margin: 0 auto;
-  margin-top:30px;
+  margin-top:20px;
+  margin-bottom: 20px;
 }
 
 .hole {
@@ -186,4 +180,29 @@ a {
 
 .weatherlist {
   list-style: none;
+}
+
+tr:nth-child(even) {
+ background-color: #3f3f3f;
+ color:white;
+}
+tr:nth-child(odd) {
+ background-color: #696969;
+ color:white;
+}
+
+.footer{
+  height:30px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: .8;
+  display: block;
+  margin: 0 auto;
+}
+
+.signedin {
+  margin-top: 30%;
 }

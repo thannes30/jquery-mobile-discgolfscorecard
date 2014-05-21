@@ -22,24 +22,24 @@
       <% @scores.each do |score| %>
     <tr>
       <div class="column">
-        <td>
+        <td class="tablecolumn">
           <%= score.created_at.strftime("%b %d 20%y") %>
         </td>
       </div>
       <div class="column">
-        <td>
+        <td class="tablecolumn">
           <% if score.game %>
             <%= score.game.course %>
           <% end %>
         </td>
       </div>
       <div class="column">
-        <td>
-          <%= score.total_score %>
+        <td class="tablecolumn">
+          <%= score.total_score.sum %>
         </td>
       </div>
       <div class="column">
-      <td>
+      <td class="tablecolumn">
         <p><%= @game.weather %><br>
         <%= @game.temperature %>&deg<br>
         <%= @game.wind %> mph</p>
@@ -50,5 +50,6 @@
     <% end %>
   </table>
   </div>
+</div>
 
-<div class="footer"></div>
+
