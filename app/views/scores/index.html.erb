@@ -21,6 +21,7 @@
       <th>Course</th>
       <th>Score</th>
       <th>Weather</th>
+      <th> </th>
     </tr>
   </div>
       <% unless @scores.nil? %>
@@ -49,6 +50,11 @@
         <%= @game.temperature %>&deg<br>
         <%= @game.wind %> mph</p>
       </td>
+      <td class="tablecolumn">
+          <%= form_for(@game, :html => { :method => :delete }) do |f| %>
+          <%= f.submit "Delete" %>
+          <% end %>
+       </td>
     </div>
      </tr>
      <% end %>

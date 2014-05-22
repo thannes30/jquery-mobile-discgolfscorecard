@@ -30,6 +30,11 @@ class GamesController < ApplicationController
     @games = Game.all
   end
 
+  def destroy
+    Game.delete(params[:id])
+    redirect_to root_path
+  end
+
   private
 
   def game_params
