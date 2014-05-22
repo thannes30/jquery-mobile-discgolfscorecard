@@ -7,11 +7,10 @@ I am planning to build an application that allows a user to create a profile upo
 <!-- Object Models. Draw out the model associations for your project. Pen and paper is very easy and you can take a picture to save it, or use software like PowerPoint, Keynote, Gliffy (online), and Omnigraffle ($$). -->
 On the backend, I will have USERS, SCORES, and GAMES models. SCORES will be my Join Table between GAMES, and USERS in the database. The User table, will store the username of the user. The GAME table stores the course_name, date, weather(sunny, partly cloudy, etc), wind_speed, and temperature. The score table will store the user_id, and the game_id to connect the two.
 
-![photo1.jpg](thannes30.github.com/wdi_project1/wireframes/photo1.jpg)
-![photo1.jpg](thannes30.github.com/wdi_project1/wireframes/photo2.jpg)
 
-![photo1.jpg](wireframes/photo1.jpg)
-![photo2.jpg](wireframes/photo2.jpg)
+
+![photo1.jpg](/wireframes/photo1.jpg)
+![photo2.jpg](/wireframes/photo2.jpg)
 
 <!-- Milestones. -->
 Monday 9am- Routes are complete, and page links are fully functional to maneuver site. API is fully functional, and getting weather information based on users location. Now focus on getting content perfect.
