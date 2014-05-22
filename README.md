@@ -10,8 +10,8 @@ On the backend, I will have USERS, SCORES, and GAMES models. SCORES will be my J
 ![photo1.jpg](thannes30.github.com/wdi_project1/wireframes/photo1.jpg)
 ![photo1.jpg](thannes30.github.com/wdi_project1/wireframes/photo2.jpg)
 
-[photo1.jpg](wireframes/photo1.jpg)
-[photo2.jpg](wireframes/photo2.jpg)
+![photo1.jpg](wireframes/photo1.jpg)
+![photo2.jpg](wireframes/photo2.jpg)
 
 <!-- Milestones. -->
 Monday 9am- Routes are complete, and page links are fully functional to maneuver site. API is fully functional, and getting weather information based on users location. Now focus on getting content perfect.
