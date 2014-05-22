@@ -1,6 +1,5 @@
 class ScoresController < ApplicationController
 
-
   def index
     @game = Game.find(params[:game_id])
     @scores = Score.where(user_id: current_user.id)
@@ -10,6 +9,7 @@ class ScoresController < ApplicationController
     @game = Game.find(params[:game_id])
     @score = Score.new
   end
+
 
   def create
     @score = Score.new(score_params)
@@ -37,5 +37,9 @@ class ScoresController < ApplicationController
   # def game_params
   #   params.require(:game).permit(:course, :temperature, :wind, :weather, :created_at, :updated_at)
   # end
-
 end
+
+
+
+
+
