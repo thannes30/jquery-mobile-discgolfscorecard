@@ -60,6 +60,7 @@ GEM
     minitest (5.3.4)
     multi_json (1.10.0)
     multi_xml (0.5.5)
+    newrelic_rpm (3.9.0.229)
     pg (0.17.1)
     polyglot (0.3.4)
     pry (0.9.12.6)
@@ -137,6 +138,7 @@ DEPENDENCIES
   httparty (= 0.11.0)
   jbuilder (~> 2.0)
   jquery-rails
+  newrelic_rpm
   pg
   pry
   pry-nav

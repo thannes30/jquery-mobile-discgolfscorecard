@@ -45,3 +45,4 @@ gem 'httparty', '0.11.0'
 gem 'pry'
 gem 'pry-nav'
 
+gem 'newrelic_rpm'
