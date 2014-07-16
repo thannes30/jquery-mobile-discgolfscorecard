@@ -1,20 +1,16 @@
-created github repo 'wdi_project1'
-
-<!-- README.md Projects need a readme file in markdown explaining their project. Explain your concept and data model. What problem are you solving?!  -->
-<!-- Scope. What are you planning to build? What features will it have? What do you think you can reasonably implement in the time period? -->
-I am planning to build an application that allows a user to create a profile upon login to keep track of their discgolf scores at different courses, and different conditions(sun/rain/overcast, temp, wind speed) using the weather channel API. To create a new round, the user must create an account and sign in, or log into their existing account. Next, the user must enter the name of their course, and zip code. The next page will have a table of 18 holes allowing the user to enter their scores for each hole as they play. As this is mostly helpful in a mobile environment, I'd like to design the application to be scaleable to be mobile friendly, so users can input the data via smartphone. In the upper right corner of the header, I will display the current weather conditions (ex. Sunny, Temperature: 74F, Wind Speed: 8 MPH). After completing a game, the date, course, score, and weather conditions will save to the users 'my scores' page. Users can view, or delete their past rounds in the 'myscores' page.
-
-<!-- Object Models. Draw out the model associations for your project. Pen and paper is very easy and you can take a picture to save it, or use software like PowerPoint, Keynote, Gliffy (online), and Omnigraffle ($$). -->
-On the backend, I will have USER, SCORE, and GAME models. SCORE will be my Join Table between GAME, and USER in the database. The User table, will store the username of the user. The GAME table stores the course_name, date, weather(sunny, partly cloudy, etc), wind_speed, and temperature. The score table will store the user_id, and the game_id to connect the two.
+One of my favorite parts of playing discgolf, is that it's FREE! My local course is maintained by the local county parks department. As all things free, there is a small catch, NO SCORECARDS! I wanted to make an app that would allow a player to keep score of his/her rounds, and compare them at a later date. If you are not familiar with discgolf, take a second to check out the wiki page. http://en.wikipedia.org/wiki/Disc_golf
 
 
-<!-- Milestones. -->
-Monday 9am- Routes are complete, and page links are fully functional to maneuver site. API is fully functional, and getting weather information based on users location. Now focus on getting content perfect.
-
-Tuesday 9am- All backend coding complete. Focus next 48 hours on pixel perfect styling.
 
 
-<!-- Planning board. We will be using Trello for this. It is simple and lightweight. Your planning board needs to show the user stories and project completion status. -->
+With that being said, I built a Rails application that allows a user to create a profile and keep track of their discgolf scores at different courses, and different conditions(sun/rain/overcast, temp, wind speed) using the Weather Underground API. To create a new round, the user must create an account and sign in, or log into their existing account. Next, the user must enter the name of their course, and zip code. The next page will have a table of 18 holes allowing the user to enter their scores for each hole as they play. As this is mostly helpful in a mobile environment, I added media queries to CSS to make it easier for users to input the scores via smartphone. 
+
+In the upper right corner of the header on the scorecard page, it display the current weather conditions (ex. Sunny, Temperature: 74F, Wind Speed: 8 MPH). After completing a game, the date, course, score, and weather conditions save to the users 'my scores' page. Users can view, or delete their past rounds in the 'myscores' page, in addition to reflecting on the relation between the wind, temperature, and conditions and their score.
+
+On the backend, I have USERS, SCORES, and GAMES models. SCORES is a Join Table between GAMES, and USERS. The User table, stores the username of the user. The GAME table stores the course_name, date, weather(sunny, partly cloudy, etc), wind_speed, and temperature as well as each hole score. The score table will store the user_id, and the game_id to connect the two.
+
+
+
 
 RESOURCES
 http://www.wunderground.com/weather/api/d/docs?d=resources/icon-sets&MR=1
