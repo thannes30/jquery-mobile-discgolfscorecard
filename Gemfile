@@ -42,6 +42,8 @@ gem 'httparty', '0.11.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'jquery_mobile_rails'
+
 gem 'pry'
 gem 'pry-nav'
 

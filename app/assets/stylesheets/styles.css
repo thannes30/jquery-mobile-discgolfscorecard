@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
   color: white;
   font-family: helvetica, sans-serif;
 }
@@ -78,11 +78,9 @@ body{
   color:white;
   background-color:black;
   width:75%;
-/*  height:65%;*/
   position:absolute;
   top: 20%;
   right: 12%;
-/*  bottom: 12%;*/
   left: 12%;
   opacity: .8;
 }
@@ -105,7 +103,6 @@ body{
 
 p{
   font-size: .9em;
-  /*text-align: center;*/
 }
 
 table {
@@ -124,7 +121,6 @@ table {
 h4{
   font-family:helvetica, sans-serif;
   text-align: center;
-  /*margin: 10px 0 0 0;*/
 }
 
 .scorebutton {
@@ -147,10 +143,10 @@ p {
   font-family: helvetica, sans-serif;
 }
 
-a:link {color:#FFFFFF;}      /* unvisited link */
-a:visited {color:#d3d3d3;}  /* visited link */
-a:hover {color:#2f4f4f;}  /* mouse over link */
-a:active {color:#d3d3d3;} /*selected link*/
+a:link {color:#FFFFFF;}
+a:visited {color:#d3d3d3;}
+a:hover {color:#2f4f4f;}
+a:active {color:#d3d3d3;}
 a {
   text-decoration: none;
   font-family: helvetica, sans-serif;
@@ -175,7 +171,6 @@ a {
   top: 1%;
   color:white;
   font-size: .9em;
- /* width: 200px;*/
 }
 
 .signoff {
