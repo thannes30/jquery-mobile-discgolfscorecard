@@ -47,3 +47,4 @@ gem 'jquery_mobile_rails'
 gem 'pry'
 gem 'pry-nav'
 
+gem 'newrelic_rpm'
