@@ -10,7 +10,6 @@ class ScoresController < ApplicationController
     @score = Score.new
   end
 
-
   def create
     @score = Score.new(score_params)
     @score.user = current_user

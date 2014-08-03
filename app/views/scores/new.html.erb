@@ -6,7 +6,6 @@
         <li>Temperature: <%= @game.temperature %>&deg</li>
         <li>Wind Speed: <%= @game.wind %> mph</li>
       </ul>
-    <!-- display weather here -->
   </div>
 </div>
 
@@ -14,81 +13,79 @@
 <h4>Player Name:  <%= current_user.username.upcase %></h4>
 <h4>Course Name:  <%= @game.course.upcase %></h4>
 
-  <div class="enterscores_left">
+    <div class="scores">
       <%= form_for :score, url: game_scores_path(@game) do |f| %>
         <div class="smallforms">
-          <%= f.label :hole_1 %>:
-          <%= f.text_field :hole_1, :size => 5 %><br>
+          <p>Hole 1</p>
+          <%= f.select(:hole_1, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_2 %>:
-          <%= f.text_field :hole_2, :size => 5 %><br>
+          <p>Hole 2</p>
+          <%= f.select(:hole_2, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_3 %>:
-          <%= f.text_field :hole_3, :size => 5 %><br>
+          <p>Hole 3</p>
+          <%= f.select(:hole_3, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_4 %>:
-          <%= f.text_field :hole_4, :size => 5 %><br>
+          <p>Hole 4</p>
+          <%= f.select(:hole_4, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_5 %>:
-          <%= f.text_field :hole_5, :size => 5 %><br>
+          <p>Hole 5</p>
+          <%= f.select(:hole_5, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_6 %>:
-          <%= f.text_field :hole_6, :size => 5 %><br>
+          <p>Hole 6</p>
+          <%= f.select(:hole_6, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_7 %>:
-          <%= f.text_field :hole_7, :size => 5 %><br>
+          <p>Hole 7</p>
+          <%= f.select(:hole_7, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_8 %>:
-          <%= f.text_field :hole_8, :size => 5 %><br>
+          <p>Hole 8</p>
+          <%= f.select(:hole_8, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_9 %>:
-          <%= f.text_field :hole_9, :size => 5 %><br>
-        </div>
-   </div>
-   <div class="enterscores_right">
-        <div class="smallforms">
-          <%= f.label :hole_10 %>:
-          <%= f.text_field :hole_10, :size => 5 %><br>
+          <p>Hole 9</p>
+          <%= f.select(:hole_9, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_11 %>:
-          <%= f.text_field :hole_11, :size => 5 %><br>
+          <p>Hole 10</p>
+          <%= f.select(:hole_10, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_12 %>:
-          <%= f.text_field :hole_12, :size => 5 %><br>
+          <p>Hole 11</p>
+          <%= f.select(:hole_11, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_13 %>:
-          <%= f.text_field :hole_13, :size => 5 %><br>
+         <p>Hole 12</p>
+          <%= f.select(:hole_12, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_14 %>:
-          <%= f.text_field :hole_14, :size => 5 %><br>
+          <p>Hole 13</p>
+          <%= f.select(:hole_13, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_15 %>:
-          <%= f.text_field :hole_15, :size => 5 %><br>
+          <p>Hole 14</p>
+          <%= f.select(:hole_14, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_16 %>:
-          <%= f.text_field :hole_16, :size => 5 %><br>
+          <p>Hole 15</p>
+          <%= f.select(:hole_15, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_17 %>:
-          <%= f.text_field :hole_17, :size => 5 %><br>
+          <p>Hole 16</p>
+          <%= f.select(:hole_16, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="smallforms">
-          <%= f.label :hole_18 %>:
-            <%= f.text_field :hole_18, :size => 5 %><br>
+          <p>Hole 17</p>
+          <%= f.select(:hole_17, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
+        </div>
+        <div class="smallforms">
+          <p>Hole 18</p>
+          <%= f.select(:hole_18, options_for_select([ ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7', 7], ['8', 8] ])) %>
         </div>
         <div class="saveround">
           <%= f.submit("Save Round") %>
@@ -97,4 +94,4 @@
   </div>
 <% end %>
 </div>
-<div class="footer"></div>
+<div class="footer" data-role="footer"></div>

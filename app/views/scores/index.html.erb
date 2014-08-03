@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" data-role="header">
   <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
   <div class="newgame">
       <%= link_to "New Game", games_path %>
@@ -41,7 +41,7 @@
       </div>
       <div class="column">
         <td class="tablecolumn">
-          <%= score.hole_1 + score.hole_2 + score.hole_3 + score.hole_4 + score.hole_5 + score.hole_6 + score.hole_7 + score.hole_8 + score.hole_9 + score.hole_10 + score.hole_11 + score.hole_12 + score.hole_13 + score.hole_14 + score.hole_15 + score.hole_16 + score.hole_17  %>
+          <%= score.hole_1.to_i + score.hole_2.to_i + score.hole_3.to_i + score.hole_4.to_i + score.hole_5.to_i + score.hole_6.to_i + score.hole_7.to_i + score.hole_8.to_i + score.hole_9.to_i + score.hole_10.to_i + score.hole_11.to_i + score.hole_12.to_i + score.hole_13.to_i + score.hole_14.to_i + score.hole_15.to_i + score.hole_16.to_i + score.hole_17.to_i + score.hole_18.to_i %>
         </td>
       </div>
       <div class="column">
@@ -51,10 +51,10 @@
         <%= @game.wind %> mph</p>
       </td>
       <td class="tablecolumn">
-          <%= form_for(@game, :html => { :method => :delete }) do |f| %>
-          <%= f.submit "Delete" %>
-          <% end %>
-       </td>
+        <%= form_for(@game, :html => { :method => :delete }) do |f| %>
+        <%= f.submit "Delete" %>
+        <% end %>
+      </td>
     </div>
      </tr>
      <% end %>
@@ -62,3 +62,5 @@
   </table>
   </div>
 </div>
+
+<div class="footer" data-role="footer"></div>

@@ -1,22 +1,18 @@
-<div class="header">
+<div class="header" data-role="header">
   <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
-  <div class="weather"></div>
 </div>
 
 <div class="login">
-  <h4 class="signup">Sign Up</h4>
+  <h2 class="signup">Sign Up</h2>
   <div class="form">
   <%= form_for @user do |f| %>
-    <%= f.label :username %><br>
-    <%= f.text_field :username %><br>
-    <%= f.label :password %><br>
-    <%= f.password_field :password %><br>
-    <%= f.label :password_confirmation %><br>
-    <%= f.password_field :password_confirmation %><br>
+    <%= f.text_field :username, placeholder: "Username" %>
+    <%= f.password_field :password, placeholder: "Password" %>
+    <%= f.password_field :password_confirmation, placeholder: "Password Confirmation" %>
     <%= f.submit %>
     <% end %>
   </div>
 </div>
 
 
-<div class="footer"></div>
+<div class="footer" data-role="footer" data-position="fixed"></div>

@@ -1,24 +1,28 @@
 <header class="header" data-role="header">
   <div class="logo"><h1>Disc Golf<br>Scorecard</h1></div>
-  <div class="weather"></div>
 </header>
 
 <div class="creategame" data-role="main">
   <div class="loginsignup">
   <% if current_user %>
-    <li class="signedin">
-      You are signed in as <%= current_user.username %>.
-    </li>
-    <%= link_to "Create New Game", games_path %><br><br>
-    <%= link_to "Log Out", log_out_path, method: :delete %>
-  <% else %>
-    <h4>Welcome to Disc Golf Scorecard!</h4><li>To keep score of your game, please
-    <%= link_to "Log In", log_in_path %>.
-    To create an account, please
-    <%= link_to "Sign Up", users_new_path %>.
-    </li>
+    <ul data-role="listview">
+      <li class="signedin">
+        You are signed in as <%= current_user.username %>.
+      </li>
+      <li><%= link_to "Create New Game", games_path %></li>
+      <!--  "My Scores", games_score_path -->
+      <!-- post_comments_path(@comment.post) -->
+      <li><%= link_to "Log Out", log_out_path, method: :delete %></li>
+    <% else %>
+      <h4>Welcome to Disc Golf Scorecard!</h4>
+      <p>To keep score of your game</p>
+      <ul data-role="listview">
+        <li><%= link_to "Log In", log_in_path %></li>
+      <p>To create an account</p>
+        <li><%= link_to "Sign Up", users_new_path %></li>
+    </ul>
   </div>
   <% end %>
 </div>
 
-<div class="footer" data-role="footer"></div>
+<div class="footer" data-role="footer" data-position="fixed"></div>
