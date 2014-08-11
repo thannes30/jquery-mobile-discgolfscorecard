@@ -2,6 +2,7 @@ class ScoresController < ApplicationController
 
   def index
     @game = Game.find(params[:game_id])
+    binding.pry
     @scores = Score.where(user_id: current_user.id)
   end
 
@@ -24,6 +25,11 @@ class ScoresController < ApplicationController
   def show
     @scores = Score.all
   end
+
+  # def destroy
+  #   @score = Score.find(params[:id])
+  #   @score.destroy
+  # end
 
   private
 

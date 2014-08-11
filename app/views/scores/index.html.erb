@@ -45,7 +45,7 @@
         </td>
       </div>
       <div class="column">
-      <td class="tablecolumn">
+      <td class="tablecolumn" data-game-id="<%= score.game %>" data-game2-id="<%= @game.id %>">
         <p><%= @game.weather %><br>
         <%= @game.temperature %>&deg<br>
         <%= @game.wind %> mph</p>
@@ -63,4 +63,4 @@
   </div>
 </div>
 
-<div class="footer" data-role="footer"><p>Disc Golf Scorecard &#169;</p></div>
+<div class="footer" data-role="footer" data-position="fixed"><p>Disc Golf Scorecard &#169;</p></div>
