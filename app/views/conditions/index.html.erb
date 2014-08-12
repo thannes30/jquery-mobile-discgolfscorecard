@@ -7,10 +7,7 @@
 </div>
 <div class="creategame">
   <h3>Create New Game</h3>
-  <%= form_for :game, url: games_path(@user) do |f| %>
-    <p>
-      <%= f.text_field :course, :placeholder => "Enter Course Name" %>
-    </p>
+  <%= form_for :game, url: new_game_score_path(@user, @game) do |f| %>
     <p>
       <%= f.text_field :zipcode, :placeholder => "Enter Zipcode" %>
     </p>

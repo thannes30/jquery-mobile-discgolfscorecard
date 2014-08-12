@@ -13,6 +13,8 @@ end
   get 'sessions/delete' => 'sessions#destroy'
   delete 'sessions' => 'sessions#destroy', as: 'log_out'
   get 'profiles' => 'profiles#index'
+  get 'conditions' => 'conditions#index'
+  post 'conditions' => 'conditions#index'
 
 # OLD ROUTES
 #            Prefix Verb   URI Pattern                               Controller#Action
@@ -44,7 +46,7 @@ end
 
 end
 
-#         Prefix Verb   URI Pattern                          Controller#Action
+#                 Prefix Verb   URI Pattern                          Controller#Action
 #     game_scores GET    /games/:game_id/scores(.:format)     scores#index
 #                 POST   /games/:game_id/scores(.:format)     scores#create
 #  new_game_score GET    /games/:game_id/scores/new(.:format) scores#new
@@ -76,3 +78,4 @@ end
 # sessions_delete GET    /sessions/delete(.:format)           sessions#destroy
 #         log_out DELETE /sessions(.:format)                  sessions#destroy
 #        profiles GET    /profiles(.:format)                  profiles#index
+#      conditions POST   /conditions(.:format)                conditions#index

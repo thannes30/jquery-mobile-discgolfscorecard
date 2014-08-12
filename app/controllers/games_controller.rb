@@ -6,6 +6,7 @@ class GamesController < ApplicationController
 
   def new
     @game = Game.new
+    @user = current_user
     # redirect_to show_scores_path
   end
 
@@ -41,7 +42,7 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:course, :temperature, :wind, :weather, :created_at, :updated_at)
+    params.require(:game).permit(:user_id, :course, :temperature, :wind, :weather, :created_at, :updated_at)
   end
 
   # def score_params

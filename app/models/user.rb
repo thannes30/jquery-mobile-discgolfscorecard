@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-  has_many :scores
-  has_many :games, through: :scores
+  has_many :games
+  has_many :scores, through: :games
   has_secure_password
 
   validates :username, presence: true

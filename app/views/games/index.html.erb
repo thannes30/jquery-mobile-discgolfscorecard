@@ -5,12 +5,12 @@
     <%= link_to "Log Out", log_out_path, method: :delete %>
   </div>
 </div>
+<h1>Games index</h1>
+
 <div class="creategame">
   <h3>Create New Game</h3>
-  <%= form_for :game, url: games_path do |f| %>
-    <p>
-      <%= f.text_field :course, :placeholder => "Enter Course Name" %>
-    </p>
+  <%= form_for :game, url: games_path(@user) do |f| %>
+
     <p>
       <%= f.text_field :zipcode, :placeholder => "Enter Zipcode" %>
     </p>
@@ -23,3 +23,4 @@
 </div>
 
 <div class="footer" data-role="footer" data-position="fixed"><p>Disc Golf Scorecard &#169;</p></div>
+

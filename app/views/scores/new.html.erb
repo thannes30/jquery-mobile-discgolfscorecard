@@ -11,7 +11,7 @@
 
 <div class="enterscores">
 <h4>Player Name:  <%= current_user.username.upcase %></h4>
-<h4>Course Name:  <%= @game.course.upcase %></h4>
+<p><%= f.text_field :course, :placeholder => "Enter Course Name" %></p>
 
     <div class="scores">
       <%= form_for :score, url: game_scores_path(@game) do |f| %>
